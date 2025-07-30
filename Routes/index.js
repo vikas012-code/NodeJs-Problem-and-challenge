@@ -32,7 +32,7 @@ const server = http.createServer((req, res) => {
         res.end(JSON.stringify(user));
     }
     else if(req.url==="/contact"){
-        fs.readFile(__dirname + "/image.html").then((contents) => {
+        fs.readFile(__dirname + "/contact.html").then((contents) => {
         res.setHeader("Content-Type", "text/html");
         res.writeHead(200);
         res.end(contents);
